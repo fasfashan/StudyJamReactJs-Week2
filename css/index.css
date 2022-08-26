@@ -119,3 +119,33 @@ main {
   border-radius: 4px;
   box-shadow: 0px 10px 56px rgba(0, 0, 0, 0.05);
 }
+@media only screen and (max-width: 992px) {
+  .card-one {
+    grid-column: 1 / 9;
+  }
+  .card-two {
+    grid-column: 9 / 13;
+  }
+  .card-three {
+    grid-column: 1 / 9;
+    grid-row: unset;
+  }
+  .card-four {
+    grid-column: 9 / 13;
+  }
+  .card-five {
+    grid-column: 1/13;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four,
+  .card-five {
+    grid-column: 1 / 13;
+  }
+  .container {
+    margin: 0 24px;
+  }
+}
